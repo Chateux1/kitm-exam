@@ -17,20 +17,20 @@ public class Dish {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-//    @NotBlank(message = "Privaloma įvesti patiekalo grupę.")
-//    @Size(max = 30, message = "Leidžiama įvesti iki 30 simbolių")
+    @NotBlank(message = "Privaloma įvesti patiekalo grupę.")
+    @Size(max = 30, message = "Leidžiama įvesti iki 30 simbolių")
     private String group;
 
-//    @NotBlank(message = "Privaloma įvesti patiekalo pavadinimą.")
-//    @Size(max = 30, message = "Leidžiama įvesti iki 30 simbolių")
+    @NotBlank(message = "Privaloma įvesti patiekalo pavadinimą.")
+    @Size(max = 30, message = "Leidžiama įvesti iki 30 simbolių")
     private String name;
 
-//    @NotNull(message = "Privaloma įvesti kalorijų skaičių.")
-//    @Range(min = 1, max = 9999, message = "Leidžiama įvesti nuo 1 iki 9999 kalorijų")
+    @NotNull(message = "Privaloma įvesti kalorijų skaičių.")
+    @Range(min = 1, max = 9999, message = "Leidžiama įvesti nuo 1 iki 9999 kalorijų")
     private int calories;
 
-//    @NotNull(message = "Privaloma įvesti patiekalo kainą.")
-//    @Range(min = 0, max = 100000, message = "Kaina negali būti neigiama.")
+    @NotNull(message = "Privaloma įvesti patiekalo kainą.")
+    @Range(min = 0, max = 100000, message = "Kaina negali būti neigiama.")
     private double price;
 
     public Dish() {}
